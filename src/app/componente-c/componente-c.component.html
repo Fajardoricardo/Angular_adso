@@ -1,0 +1,16 @@
+<p>componente-c works!</p>
+<p>{{valor}}</p>
+ <!-- opcion 1 -->
+<button (click)="visible = !visible">Ocultar/mostrar </button>
+<div *ngIf="visible ">
+  <code>
+    <a href="http://localhost:4200/componente-principal" style="color: rgb(204, 133, 26);"> puntoA</a> 
+  </code>
+</div>
+<!-- opcion 2 -->
+<div>
+    <button (click)="Texto()">{{mostrarTexto ? "Mostrar" : "Ocultar" }}</button>
+    <p *ngIf="mostrarTexto">{{ texto }}</p>
+  </div>
+  
+   

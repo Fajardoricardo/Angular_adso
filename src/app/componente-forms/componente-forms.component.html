@@ -1,0 +1,20 @@
+<div class="container">
+    <form [formGroup]="frmDatosBasicos" (submit)="send()">
+    <!-- <div class="row g-3 align-items-center"> -->
+    <div class="mb-3">
+        <label for="" class="form-label">Nombre:</label>
+        <input type="text" placeholder="Nombres"class="form-control" formControlName="nombres">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Apellido:</label>
+        <input type="text"class="form-control"  placeholder="Apellido" formControlName="apellidos">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email:</label>
+        <input type="email"class="form-control"  placeholder="Email" formControlName="email">
+    </div>
+    <div class="mb-3">
+        <button type="submit"  class="btn btn-primary">Enviar</button>
+    </div>
+</form>    
+</div>
